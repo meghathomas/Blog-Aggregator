@@ -1,0 +1,13 @@
+<!-- <p>
+  <b>Blog Author :</b>
+  <%#= @blog.blog_author %>
+</p> -->
+
+<p>
+  <b>Blog url :</b>
+  <%= @blog.blog_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
