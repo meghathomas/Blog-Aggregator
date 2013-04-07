@@ -1,4 +1,7 @@
 Amit::Application.routes.draw do
+  resources :requests
+
+
    root :to => "blogs#read_blogs"
   devise_for :admins, :path_names => { :sign_in => 'login', :sign_out => 'logout'}
   
